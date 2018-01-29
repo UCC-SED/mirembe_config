@@ -1,0 +1,95 @@
+{
+  "visitReport10": {
+    "name": "Visit Report",
+    "type": "visits",
+    "config": {
+      "forDataAnalysis": true,
+      "patientAttributes": [
+        "education",
+        "occupation",
+        "primaryContact"
+      ],
+      "visitAttributes": [
+        "Visit Status",
+        "Admission Status"
+      ],
+      "patientAddresses": [
+        "address4",
+        "countyDistrict",
+        "address2"
+      ],
+      "applyDateRangeFor": "visitStopDate",
+      "visitTypesToFilter": [
+        "PHARMACY VISIT",
+        "OPD"
+      ]
+    }
+  },
+  "outpatientMorbidity": {
+    "name": "Outpatient Morbidity",
+    "type": "diagnosisCount",
+    "config": {
+      "visitTypes": [
+        "OPD"
+      ]
+    }
+  },
+  "inpatientMorbidity": {
+    "name": "Inpatient Morbidity",
+    "type": "diagnosisCount",
+    "config": {
+      "visitTypes": [
+        "IPD"
+      ]
+    }
+  },
+  "genericLaboratoryServices": {
+    "name": "Laboratory Services",
+    "type": "ElisGeneric",
+    "config": {
+      "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/testCount.sql"
+    }
+  },
+  "OPD/IPDVisitCount": {
+    "name": "OPD/IPD Visit Count",
+    "type": "IpdOpdVisitCount"
+  },
+  "IPDPatientsReport": {
+    "name": "IPD Patients Report",
+    "type": "ipdPatients",
+    "config": {
+      "addressAttributes": [
+        "address1",
+        "city_village"
+      ],
+      "patientAttributes": [
+        "caste",
+        "education"
+      ],
+      "conceptNames": [
+        "Height",
+        "Weight"
+      ],
+      "filterBy": "Date of Discharge"
+    }
+  },
+  "OrderFulfillmentReport": {
+    "name": "Order Fulfillment Report",
+    "type": "OrderFulfillmentReport",
+    "config": {
+      "type": "OrderFulfillmentReport",
+      "orderTypes": [
+        "Order",
+        "Drug Order"
+      ]
+    }
+  },
+  "patientReport": {
+    "name": "Patient Information",
+    "type": "PatientReport"
+  },
+  "drugOrderReport": {
+    "name": "Drug Order report",
+    "type": "DrugOrder"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "homePage": {
+    "header_text": "<b>WELCOME TO<br />TANZANIA EMR",
+    "logo": "/bahmni_config/openmrs/images/tanzaniaLogoFull.png",
+    "title_text": " "
+  },
+  "loginPage": {
+    "logo": "/bahmni_config/openmrs/images/tanzaniaLogoFull.png",
+    "showHeaderText": false,
+    "showTitleText": false
+  },
+  "helpLink": {
+    "url": "https://bahmni.atlassian.net/wiki/display/BAH/Bahmni+Home"
+  }
+}
