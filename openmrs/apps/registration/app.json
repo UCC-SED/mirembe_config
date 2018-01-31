@@ -78,6 +78,7 @@
     "checkDuplicatePatient":true,
     "hideRelationShipDuration": true,
     "showCasteSameAsLastNameCheckbox": false,
+    "patientAttendanceMode": "room",
     "assumedBirthDay": "01/07",
     "printOptions": [
       {
