@@ -75,6 +75,7 @@
     "afterVisitSaveForwardUrl": "../registration",
     "showMiddleName": true,
     "showBirthTime": true,
+    "checkDuplicatePatient":true,
     "hideRelationShipDuration": true,
     "showCasteSameAsLastNameCheckbox": false,
     "assumedBirthDay": "01/07",
