@@ -1,7 +1,7 @@
 {
     "general":{
         "translationKey":"DASHBOARD_TAB_GENERAL_KEY",
-        "displayByDefault":true,
+        "displayByDefault":false,
         "maxRecentlyViewedPatients":10,
         "sections": {
             "navigationLinksControl": {
@@ -147,7 +147,7 @@
     "hiv":{
         "translationKey":"DASHBOARD_TAB_HIV_DASHBOARD_KEY",
         "maxRecentlyViewedPatients":10,
-        "displayByDefault": true,
+        "displayByDefault": false,
         "sections": {
             "hivTreatmentsDetails": {
                 "translationKey": "HIV Drugs",
@@ -209,7 +209,7 @@
     "tb":{
         "translationKey":"DASHBOARD_TAB_TB_DASHBOARD_KEY",
         "maxRecentlyViewedPatients":10,
-        "displayByDefault": true,
+        "displayByDefault": false,
         "sections": {
             "tbTreatmentsDetails": {
                 "translationKey": "TB Drugs",
@@ -458,7 +458,7 @@
     "RCH":{
         "translationKey":"RCH",
         "maxRecentlyViewedPatients":10,
-        "displayByDefault": true,
+        "displayByDefault": false,
         "sections":{
             "patientInformation":{
                 "translationKey":"DASHBOARD_TITLE_PATIENT_INFORMATION_KEY",
