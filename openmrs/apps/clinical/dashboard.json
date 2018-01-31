@@ -1,7 +1,25 @@
 {
+    "clerk": {
+        "translationKey": "DASHBOARD_TAB_GENERAL_KEY",
+        "displayByDefault": true,
+        "maxRecentlyViewedPatients": 10,
+        "sections": {
+            "navigationLinksControl": {
+                "translationKey": "DASHBOARD_TITLE_NAVIGATION_LINKS_CONTROL_KEY",
+                "displayType": "Full-Page",
+                "type": "navigationLinksControl",
+                "displayOrder": 0,
+                "showLinks": [
+                    "home",
+                    "registration",
+                    "visitAttribute"
+                ]
+            }
+        }
+    },
     "general":{
         "translationKey":"DASHBOARD_TAB_GENERAL_KEY",
-        "displayByDefault":true,
+        "displayByDefault":false,
         "maxRecentlyViewedPatients":10,
         "sections": {
             "navigationLinksControl": {
