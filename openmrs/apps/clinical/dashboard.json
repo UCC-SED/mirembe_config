@@ -1,7 +1,7 @@
 {
     "general":{
         "translationKey":"DASHBOARD_TAB_GENERAL_KEY",
-        "displayByDefault":false,
+        "displayByDefault":true,
         "maxRecentlyViewedPatients":10,
         "sections": {
             "navigationLinksControl": {
