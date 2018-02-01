@@ -1,7 +1,25 @@
 {
+    "clerk": {
+        "translationKey": "DASHBOARD_TAB_GENERAL_KEY",
+        "displayByDefault": true,
+        "maxRecentlyViewedPatients": 10,
+        "sections": {
+            "navigationLinksControl": {
+                "translationKey": "DASHBOARD_TITLE_NAVIGATION_LINKS_CONTROL_KEY",
+                "displayType": "Full-Page",
+                "type": "navigationLinksControl",
+                "displayOrder": 0,
+                "showLinks": [
+                    "home",
+                    "registration",
+                    "visitAttribute"
+                ]
+            }
+        }
+    },
     "general":{
         "translationKey":"DASHBOARD_TAB_GENERAL_KEY",
-        "displayByDefault":true,
+        "displayByDefault":false,
         "maxRecentlyViewedPatients":10,
         "sections": {
             "navigationLinksControl": {
@@ -139,32 +157,15 @@
                 "hideEmptyDisplayControl": true,
                 "type": "programs",
                 "displayOrder": 8
-            },
-            "radiology":{
-                "translationKey":"DASHBOARD_TITLE_RADIOLOGY_KEY",
-                "type":"radiology",
-                "showDetailsButton":true,
-                "displayOrder":5
-            },
-            "radiologyOrders":{
-                "orderType":"Radiology Order",
-                "type":"ordersControl",
-                "translationKey":"DASHBOARD_TITLE_RADIOLOGY_ORDERS_KEY",
-                "displayOrder":17,
-                "dashboardConfig":{
-                    "conceptNames":[
-                        "Summary"
-                    ],
-                    "numberOfVisits":4
-                }
             }
+
 
         }
     },
     "hiv":{
         "translationKey":"DASHBOARD_TAB_HIV_DASHBOARD_KEY",
         "maxRecentlyViewedPatients":10,
-        "displayByDefault": true,
+        "displayByDefault": false,
         "sections": {
             "hivTreatmentsDetails": {
                 "translationKey": "HIV Drugs",
@@ -226,7 +227,7 @@
     "tb":{
         "translationKey":"DASHBOARD_TAB_TB_DASHBOARD_KEY",
         "maxRecentlyViewedPatients":10,
-        "displayByDefault": true,
+        "displayByDefault": false,
         "sections": {
             "tbTreatmentsDetails": {
                 "translationKey": "TB Drugs",
@@ -475,7 +476,7 @@
     "RCH":{
         "translationKey":"RCH",
         "maxRecentlyViewedPatients":10,
-        "displayByDefault": true,
+        "displayByDefault": false,
         "sections":{
             "patientInformation":{
                 "translationKey":"DASHBOARD_TITLE_PATIENT_INFORMATION_KEY",
@@ -492,21 +493,6 @@
                 ],
                 "displayOrder":0
             },
-
-            "UzitoMjamzito":{
-                "type":"observationGraph",
-                "hideEmptyDisplayControl": true,
-                "title":"Maendeleo ya uzito wa mama mjamzito",
-                "config":{
-                    "yAxisConcepts":[
-                        "ANC -Uzito"
-                    ],
-                    "xAxisConcept":"observationDateTime",
-                    "numberOfVisits":20
-                },
-                "displayOrder":1
-            },
-
             "growthChart":{
                 "type":"observationGraph",
                 "hideEmptyDisplayControl": true,
@@ -518,7 +504,7 @@
                     "referenceData":"growthChartReference.csv",
                     "numberOfVisits":20
                 },
-                "displayOrder":2
+                "displayOrder":1
             },
 
             "weight/BMI":{
@@ -565,15 +551,14 @@
                 "displayOrder":4
             },
 
-
             "grafuYaUchungu":{
                 "type":"observationGraph",
-                "hideEmptyDisplayControl": false,
+                "hideEmptyDisplayControl": true,
                 "title":"Labour - Grafu ya uchungu",
                 "config":{
                     "yAxisConcepts":[
-                        "ANC - Njia kufunguka (Cervix)",
-                        "ANC - Kichwa kuteremka (Descent)"
+                        "Labour - Njia kufunguka (Cervix)",
+                        "Labour - Kichwa kuteremka (Descent)"
                     ],
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":10
