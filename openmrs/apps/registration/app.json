@@ -27,7 +27,9 @@
           "FileNumber",
           "Place of Birth",
           "Name of Area leader/Neighbour",
-          "Tel No of Name of Area leader/Neighbour"
+          "Tel No of Name of Area leader/Neighbour",
+          "Religion",
+          "New patient?"
         ]
       },
       "nextOfKinInformation": {
@@ -133,7 +135,7 @@
         "pattern": "[a-zA-Z0-9]{3}",
         "errorMessage": "Should contain 3 characters"
       }
-    },
+    },New patient? 
     "patientSearch": {
       "address": {
         "label": "National Identifier",
