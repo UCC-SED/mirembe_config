@@ -118,5 +118,15 @@
     "icon": "fa fa-calendar",
     "order": 4,
     "requiredPrivilege": "app:appointments"
+  },
+  "orders": {
+    "id": "bahmni.orders",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "label": "Orders",
+    "url": "../orders/#/search",
+    "icon": "fa-book",
+    "order": 10,
+    "requiredPrivilege": "app:orders"
   }
 }

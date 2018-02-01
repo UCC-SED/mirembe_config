@@ -1,0 +1,28 @@
+{
+        "id": "bahmni.nurse",
+        "extensionPoints": [
+            {
+                "id": "org.bahmni.nurse.search",
+                "description": "Nurse Station"
+            }
+        ],
+    "config" : {
+      "maxConceptSetLevels": 3,
+      "conceptSetUI": {
+        "Grid1": {
+          "grid": true
+        },
+        "Coded3": {
+          "multiSelect": true
+        }
+      },
+      "sections": {
+        "title": "Radiology Order FulFillment Form",
+        "name": "Radiology Results",
+        "isObservation": true,
+        "conceptNames": ["Radiology Notes"],
+        "numberOfVisits": 2,
+        "scope": "latest"
+      }
+    }
+}
