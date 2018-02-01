@@ -27,7 +27,9 @@
           "FileNumber",
           "Place of Birth",
           "Name of Area leader/Neighbour",
-          "Tel No of Name of Area leader/Neighbour"
+          "Tel No of Name of Area leader/Neighbour",
+          "Religion",
+          "New patient?"
         ]
       },
       "nextOfKinInformation": {
@@ -77,6 +79,7 @@
     "showBirthTime": true,
     "checkDuplicatePatient":true,
     "hideRelationShipDuration": true,
+    "showTribeName": true,
     "showCasteSameAsLastNameCheckbox": false,
     "patientAttendanceMode": "room",
     "assumedBirthDay": "01/07",

@@ -238,7 +238,7 @@
     "url": "treatment",
     "icon": "fa-user-md",
     "order": 8,
-    "requiredPrivilege": "app:clinical"
+    "requiredPrivilege": "app:clinical:treatmentTab"
   },
   "referralsTab": {
     "id": "bahmni.clinical.consultation.referrals",
@@ -249,7 +249,7 @@
     "url": "printPriv",
     "icon": "fa-user-md",
     "order": 9,
-    "requiredPrivilege": "app:clinical"
+    "requiredPrivilege": "app:clinical:referralsTab"
   },
   "appointmentTab": {
     "id": "bahmni.clinical.consultation.appointment",
@@ -260,7 +260,7 @@
     "url": "appointment",
     "icon": "fa-user-md",
     "order": 9,
-    "requiredPrivilege": "app:clinical"
+    "requiredPrivilege": "app:clinical:appointmentTab"
   },
     "bahmniClinicalConsultationOrders": {
     "id": "bahmni.clinical.consultation.orders",
