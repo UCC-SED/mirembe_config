@@ -186,6 +186,7 @@
     "allowConsultationWhenNoOpenVisit": false,
     "defaultVisitType": "OPD",
     "visitTypeForRetrospectiveEntries": "Special OPD",
+    "patientAttendanceMode": "room",
     "maxConceptSetLevels": 3,
     "allowOnlyCodedDiagnosis": false,
     "conceptSetUI": {
