@@ -222,7 +222,8 @@
             }
 
 
-        }
+        },
+        "requiredPrivilege": "app:clinical:HIVTab"
     },
     "tb":{
         "translationKey":"DASHBOARD_TAB_TB_DASHBOARD_KEY",

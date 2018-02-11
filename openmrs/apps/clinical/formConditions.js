@@ -13,7 +13,29 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         return conditions;
     },
+ 'Payment Category': function (formName, formFieldValues, patient) {
+         var conditions = {
+                show: [],
+                hide: []
+            };
+         var paymentCategory = formFieldValues['Payment Category'];
+         var insuranceID = 'Insurance ID';
+         var InsuranceType = 'Insurance Type';
 
+         console.log(paymentCategory);
+         if (paymentCategory == "Insurance")
+          {
+              conditions.show.push(insuranceID);
+             conditions.show.push(InsuranceType);
+
+
+         } else {
+             conditions.hide.push(insuranceID);
+             conditions.hide.push(InsuranceType);
+
+         }
+         return conditions;
+    },
      'ANC - Mimba ya ngapi': function (formName, formFieldValues, patient) {
          var conditions = {
                 show: [],
