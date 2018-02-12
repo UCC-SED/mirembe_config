@@ -1,17 +1,32 @@
 {
-	"bahmniClinicalPatientsSearchAllPatients":{
-	 "id": "bahmni.clinical.patients.search.RadiologyOrderAllPatients",
+	"bahmniClinicalPatientsSearchAllNursePatients":{
+	 "id": "bahmni.clinical.patients.search.NurseAllPatients",
 	 "extensionPointId": "org.bahmni.patient.search",
 	 "type": "config",
 	 "extensionParams": {
 	  "searchHandler": "emrapi.sqlSearch.activePatients",
-	  "display":"Radiology Orders",
+		 "display":"Active Patients",
 	   "translationKey": "MODULE_LABEL_ACTIVE_PATIENT_KEY",
 	  "forwardUrl" : "../nurse/#/patient/{{patientUuid}}/fillform/All Nurse Obervations",
 	  "forwardButtonTitle" : "View"
 	 },
 	 "label": "Active Patient",
 	 "order": 1,
-	 "requiredPrivilege": "app:clinical"
-	 }
+	 "requiredPrivilege": "app:nurse"
+	 },
+	"bahmniClinicalPatientsSearchAllDoctorPatients":{
+		"id": "bahmni.clinical.patients.search.DoctorAllPatients",
+		"extensionPointId": "org.bahmni.patient.search",
+		"type": "config",
+		"extensionParams": {
+			"searchHandler": "emrapi.sqlSearch.activePatients",
+			"display":"Active Patients",
+			"translationKey": "MODULE_LABEL_ACTIVE_PATIENT_KEY",
+			"forwardUrl" : "../nurse/#/patient/{{patientUuid}}/fillform/All Social Worker Observation",
+			"forwardButtonTitle" : "View"
+		},
+		"label": "Active Patient",
+		"order": 1,
+		"requiredPrivilege": "app:socialWorker"
+	}
 }

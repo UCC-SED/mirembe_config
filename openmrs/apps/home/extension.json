@@ -25,19 +25,9 @@
     "type": "link",
     "translationKey": "MODULE_LABEL_CLINICAL_KEY",
     "url": "../clinical/index.html#/default/patient/search",
-    "icon": "fa-stethoscope",
-    "order": 4,
-    "requiredPrivilege": "app:clinical"
-  },
-  "nurse": {
-    "id": "bahmni.nurse",
-    "extensionPointId": "org.bahmni.home.dashboard",
-    "type": "link",
-    "translationKey": "MODULE_LABEL_NURSE_KEY",
-    "url": "../clinical/index.html#/default/patient/search",
     "icon": "fa-user-md",
     "order": 4,
-    "requiredPrivilege": "app:nurse"
+    "requiredPrivilege": "app:clinical"
   },
   "adt": {
     "id": "bahmni.adt",
@@ -119,14 +109,24 @@
     "order": 4,
     "requiredPrivilege": "app:appointments"
   },
-  "orders": {
-    "id": "bahmni.orders",
+  "socialWorker": {
+    "id": "bahmni.nurse.socialworker",
     "extensionPointId": "org.bahmni.home.dashboard",
     "type": "link",
-    "label": "Orders",
-    "url": "../orders/#/search",
-    "icon": "fa-book",
+    "label": "Social Worker",
+    "url": "../nurse/#/search",
+    "icon": "fa-user",
     "order": 10,
-    "requiredPrivilege": "app:orders"
+    "requiredPrivilege": "app:socialWorker"
+  },
+  "nurse": {
+    "id": "bahmni.nurse.nurse",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "translationKey": "MODULE_LABEL_NURSE_KEY",
+    "url": "../nurse/#/search",
+    "icon": "fa-stethoscope",
+    "order": 4,
+    "requiredPrivilege": "app:nurse"
   }
 }
