@@ -117,7 +117,7 @@
     "url": "../nurse/#/search",
     "icon": "fa-user",
     "order": 10,
-    "requiredPrivilege": "app:socialWorker"
+    "requiredPrivilege": "app: socialWorker"
   },
   "nurse": {
     "id": "bahmni.nurse.nurse",

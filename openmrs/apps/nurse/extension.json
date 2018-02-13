@@ -27,6 +27,6 @@
 		},
 		"label": "Active Patient",
 		"order": 1,
-		"requiredPrivilege": "app:socialWorker"
+		"requiredPrivilege": "app: socialWorker"
 	}
 }
