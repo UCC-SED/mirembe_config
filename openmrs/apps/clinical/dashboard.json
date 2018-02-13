@@ -58,23 +58,29 @@
                 "showDetailsButton": true,
                 "displayOrder": 3
             },
-            "labResults":{
-                "translationKey":"DASHBOARD_TITLE_LAB_RESULTS_KEY",
-                "type":"labOrders",
+            "labOrdersDisplayControl":{
+                "translationKey":"DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
+                "type":"ordersControl",
+                "orderType":"Lab Order",
                 "hideEmptyDisplayControl": true,
+                "showDetailsButton":true,
                 "displayOrder":4,
                 "dashboardConfig":{
-                    "title":null,
-                    "numberOfVisits":5,
-                    "showChart":true,
-                    "showTable":true,
-                    "showNormalLabResults": true,
-                    "showCommentsExpanded": true,
-                    "showAccessionNotes": true,
-                    "showDetailsButton":true
+                    "conceptNames":[
+                        "Systolic",
+                        "Diastolic",
+                        "Posture",
+                        "Temperature"
+                    ]
                 },
                 "expandedViewConfig":{
-                    "numberOfVisits":10
+                    "conceptNames":[
+                        "Systolic",
+                        "Diastolic",
+                        "Posture",
+                        "Temperature"
+                    ],
+                    "showDetailsButton":true
                 }
             },
             "treatments": {
