@@ -105,20 +105,6 @@
     "order": 4,
     "requiredPrivilege": "app:clinical"
   },
-  "bahmniClinicalPatientsWithPendingBillNurse": {
-  "id": "bahmni.clinical.patients.search.activePatientsWithPendingBillNurse",
-  "extensionPointId": "org.bahmni.patient.search",
-  "type": "config",
-  "extensionParams": {
-    "searchHandler": "emrapi.sqlSearch.activePatientsWithPendingBill",
-    "translationKey": "Pending Bill",
-    "forwardUrl": "#/default/patient/search",
-    "view":"tabular"
-  },
-  "label": "Active",
-  "order": 2,
-  "requiredPrivilege": "app:nurse"
-},
   "bahmniClinicalConceptSetGroupObservationsHistory": {
     "id": "bahmni.clinical.conceptSetGroup.observations.history",
     "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
