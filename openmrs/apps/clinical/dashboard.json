@@ -48,6 +48,24 @@
                     "groupByVisits": true
                 }
             },
+          "labResults":{
+            "translationKey":"DASHBOARD_TITLE_LAB_RESULTS_KEY",
+            "type":"labOrders",
+            "displayOrder":4,
+            "dashboardConfig":{
+              "title":null,
+              "numberOfVisits":6,
+              "showChart":true,
+              "showTable":false,
+              "showNormalLabResults": true,
+              "showCommentsExpanded": true,
+              "showAccessionNotes": true,
+              "showDetailsButton":false
+            },
+            "expandedViewConfig":{
+              "numberOfVisits":10
+            }
+          },
             "diagnosis": {
                 "translationKey": "DASHBOARD_TITLE_DIAGNOSIS_KEY",
                 "type": "diagnosis",
@@ -57,31 +75,6 @@
                 "hideEmptyDisplayControl": true,
                 "showDetailsButton": true,
                 "displayOrder": 3
-            },
-            "labOrdersDisplayControl":{
-                "translationKey":"DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
-                "type":"ordersControl",
-                "orderType":"Lab Order",
-                "hideEmptyDisplayControl": true,
-                "showDetailsButton":true,
-                "displayOrder":4,
-                "dashboardConfig":{
-                    "conceptNames":[
-                        "Systolic",
-                        "Diastolic",
-                        "Posture",
-                        "Temperature"
-                    ]
-                },
-                "expandedViewConfig":{
-                    "conceptNames":[
-                        "Systolic",
-                        "Diastolic",
-                        "Posture",
-                        "Temperature"
-                    ],
-                    "showDetailsButton":true
-                }
             },
             "treatments": {
                 "translationKey": "DASHBOARD_TITLE_TREATMENTS_KEY",
@@ -120,19 +113,6 @@
                 "showDetailsButton":true,
                 "hideEmptyDisplayControl": true,
                 "displayOrder":7
-            },
-            "radiologyOrders":{
-                "orderType":"Radiology Order",
-                "type":"ordersControl",
-                "hideEmptyDisplayControl": true,
-                "translationKey":"DASHBOARD_TITLE_RADIOLOGY_ORDERS_KEY",
-                "displayOrder":8,
-                "dashboardConfig":{
-                    "conceptNames":[
-                        "Summary"
-                    ],
-                    "numberOfVisits":4
-                }
             }
 
         }
