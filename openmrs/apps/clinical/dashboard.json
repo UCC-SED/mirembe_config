@@ -207,6 +207,18 @@
                 },
                 "displayOrder":5
             },
+            "temperature":{
+                "type":"observationGraph",
+                "title":"Temperature",
+                "config":{
+                    "yAxisConcepts":[
+                        "Temperature Data"
+                    ],
+                    "xAxisConcept":"observationDateTime",
+                    "numberOfVisits":10
+                },
+                "displayOrder":6
+            },
             "diabetes":{
                 "title":"Diabetes",
                 "templateName":"Diabetes, Progress",
