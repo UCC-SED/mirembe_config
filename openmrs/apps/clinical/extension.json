@@ -83,7 +83,7 @@
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalPatientsSearchAllActiveProviderPrescriptionPatients": {
-    "id": "bahmni.clinical.patients.search.allActiveProviderOPDPatients",
+    "id": "bahmni.clinical.patients.search.allActiveProviderPrescriptionPatients",
     "extensionPointId": "org.bahmni.patient.search",
     "type": "config",
     "extensionParams": {
@@ -96,7 +96,7 @@
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalPatientsSearchAllActiveProviderLabOrderPatients": {
-    "id": "bahmni.clinical.patients.search.allActiveProviderOPDPatients",
+    "id": "bahmni.clinical.patients.search.allActiveProviderLabOrderPatients",
     "extensionPointId": "org.bahmni.patient.search",
     "type": "config",
     "extensionParams": {
