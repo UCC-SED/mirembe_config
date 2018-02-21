@@ -128,5 +128,15 @@
     "icon": "fa-stethoscope",
     "order": 4,
     "requiredPrivilege": "app:nurse"
+  },
+  "bahmniBilling": {
+    "id": "bahmni.billing",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "label": "Prescription",
+    "url": "../clinical/#/default/patient/search",
+    "icon": "fa-inr",
+    "order": 8,
+    "requiredPrivilege": "app:billing"
   }
 }
