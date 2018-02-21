@@ -82,6 +82,32 @@
     "order": 3,
     "requiredPrivilege": "app:clinical"
   },
+  "bahmniClinicalPatientsSearchAllActiveProviderPrescriptionPatients": {
+    "id": "bahmni.clinical.patients.search.allActiveProviderOPDPatients",
+    "extensionPointId": "org.bahmni.patient.search",
+    "type": "config",
+    "extensionParams": {
+      "searchHandler": "emrapi.sqlSearch.activePatients",
+      "translationKey": "DrugDispense",
+      "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard/treatment"
+    },
+    "label": "Active",
+    "order": 5,
+    "requiredPrivilege": "app:clinical"
+  },
+  "bahmniClinicalPatientsSearchAllActiveProviderLabOrderPatients": {
+    "id": "bahmni.clinical.patients.search.allActiveProviderOPDPatients",
+    "extensionPointId": "org.bahmni.patient.search",
+    "type": "config",
+    "extensionParams": {
+      "searchHandler": "emrapi.sqlSearch.activeProviderPatients",
+      "translationKey": "LabOrder",
+      "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard/orders"
+    },
+    "label": "Active",
+    "order": 6,
+    "requiredPrivilege": "app:clinical"
+  },
   "bahmniClinicalTreatmentLinks": {
     "id": "bahmni.clinical.treatment.links",
     "extensionPointId": "org.bahmni.clinical.treatment.links",
