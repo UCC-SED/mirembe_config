@@ -129,14 +129,14 @@
     "order": 4,
     "requiredPrivilege": "app:nurse"
   },
-  "vct": {
-    "id": "bahmni.nurse.vct",
+  "bahmniBilling": {
+    "id": "bahmni.billing",
     "extensionPointId": "org.bahmni.home.dashboard",
     "type": "link",
-    "translationKey": "MODULE_LABEL_VCT_KEY",
-    "url": "../nurse/#/search",
-    "icon": "fa-stethoscope",
-    "order": 4,
-    "requiredPrivilege": "app:nurse"
+    "label": "Prescription",
+    "url": "../clinical/#/default/patient/search",
+    "icon": "fa-inr",
+    "order": 8,
+    "requiredPrivilege": "app:billing"
   }
 }
