@@ -38,19 +38,6 @@
         "order": 3,
         "requiredPrivilege": "app:clinical"
     },
-    "bahmniClinicalPatientsSearchActivePatientsForExposedPrograms": {
-        "id": "bahmni.clinical.patients.search.activeExposedPatients",
-        "extensionPointId": "org.bahmni.patient.search",
-        "type": "config",
-        "extensionParams": {
-            "searchHandler": "emrapi.sqlSearch.activeExposedInfantPatients",
-            "translationKey": "Exposed Infant PROGRAM",
-            "forwardUrl": "#/default/patient/{{patientUuid}}/consultationContext"
-        },
-        "label": "Active",
-        "order": 4,
-        "requiredPrivilege": "app:clinical"
-    },
     "bahmniClinicalPatientsSearchAllPatients": {
         "id": "bahmni.clinical.patients.search.allPatients",
         "extensionPointId": "org.bahmni.patient.search",

@@ -28,5 +28,20 @@
 		"label": "Active Patient",
 		"order": 1,
 		"requiredPrivilege": "app: socialWorker"
+	},
+	"bahmniClinicalPatientsSearchAllVCTPatients":{
+		"id": "bahmni.clinical.patients.search.VCTAllPatients",
+		"extensionPointId": "org.bahmni.patient.search",
+		"type": "config",
+		"extensionParams": {
+			"searchHandler": "emrapi.sqlSearch.activePatients",
+			"display":"Active Patients",
+			"translationKey": "MODULE_LABEL_ACTIVE_PATIENT_KEY",
+			"forwardUrl" : "../nurse/#/patient/{{patientUuid}}/fillform/All VCT Observation",
+			"forwardButtonTitle" : "View"
+		},
+		"label": "Active Patient",
+		"order": 1,
+		"requiredPrivilege": "app:nurse"
 	}
 }

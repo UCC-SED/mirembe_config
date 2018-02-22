@@ -17,7 +17,7 @@
     "url": "../clinical/#/programs/patient/search",
     "icon": "icon-bahmni-program",
     "order": 3,
-    "requiredPrivilege": "app:programs"
+    "requiredPrivilege": "app:vertical"
   },
   "clinical": {
     "id": "bahmni.clinical",
@@ -124,6 +124,16 @@
     "extensionPointId": "org.bahmni.home.dashboard",
     "type": "link",
     "translationKey": "MODULE_LABEL_NURSE_KEY",
+    "url": "../nurse/#/search",
+    "icon": "fa-stethoscope",
+    "order": 4,
+    "requiredPrivilege": "app:nurse"
+  },
+  "vct": {
+    "id": "bahmni.nurse.vct",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "translationKey": "MODULE_LABEL_VCT_KEY",
     "url": "../nurse/#/search",
     "icon": "fa-stethoscope",
     "order": 4,
