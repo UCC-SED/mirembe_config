@@ -138,5 +138,15 @@
     "icon": "fa-inr",
     "order": 8,
     "requiredPrivilege": "app:billing"
+  },
+  "vct": {
+    "id": "bahmni.nurse.vct",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "translationKey": "MODULE_LABEL_VCT_KEY",
+    "url": "../nurse/#/search",
+    "icon": "fa-stethoscope",
+    "order": 4,
+    "requiredPrivilege": "app:nurse"
   }
 }
