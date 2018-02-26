@@ -106,6 +106,9 @@
     "maxConceptSetLevels": 3,
     "allowOnlyCodedDiagnosis": false,
     "conceptSetUI": {
+      "Discussion Topics for Continues Health Education to CTC Client":{
+        "allowAddMore": true
+      },
       "Vitals":{
         "allowAddMore": true
       },
