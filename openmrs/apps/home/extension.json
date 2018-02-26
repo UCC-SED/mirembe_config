@@ -148,5 +148,15 @@
     "icon": "fa-stethoscope",
     "order": 4,
     "requiredPrivilege": "app:nurse"
+  },
+  "labOrders": {
+    "id": "bahmni.labOrders",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "label": "Lab Orders",
+    "url": "../clinical/#/default/patient/search",
+    "icon": "icon-bahmni-orders",
+    "order": 8,
+    "requiredPrivilege": "app:labOrders"
   }
 }
