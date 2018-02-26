@@ -17,6 +17,14 @@
     "activeVisitUuid"
   ],
   "config": {
+    "forwardUrlsForVisitTypes": [
+      {
+        "visitType": "VCT",
+        "forwardUrl": "../nurse/#/patient/{{patientUuid}}/fillform/All VCT Observation",
+        "translationKey": "Save & Start VCT Counselling",
+        "shortcutKey": "c"
+      }
+    ],
     "patientInformation": {
       "additionalPatientInformation": {
         "title": "Other Vital Information",
