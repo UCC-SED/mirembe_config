@@ -148,5 +148,15 @@
     "icon": "fa-stethoscope",
     "order": 4,
     "requiredPrivilege": "app:nurse"
+  },
+  "counselor": {
+    "id": "bahmni.nurse.counselor",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "translationKey": "MODULE_LABEL_COUNSELOR_KEY",
+    "url": "../nurse/#/search",
+    "icon": "fa-stethoscope",
+    "order": 4,
+    "requiredPrivilege": "app:counselor"
   }
 }

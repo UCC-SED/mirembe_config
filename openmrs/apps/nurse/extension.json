@@ -43,5 +43,20 @@
 		"label": "Active Patient",
 		"order": 1,
 		"requiredPrivilege": "app:nurse"
+	},
+	"bahmniClinicalPatientsSearchAllCounselorPatients":{
+		"id": "bahmni.clinical.patients.search.CounselorAllPatients",
+		"extensionPointId": "org.bahmni.patient.search",
+		"type": "config",
+		"extensionParams": {
+			"searchHandler": "emrapi.sqlSearch.activePatients",
+			"display":"Active Patients",
+			"translationKey": "MODULE_LABEL_ACTIVE_PATIENT_KEY",
+			"forwardUrl" : "../nurse/#/patient/{{patientUuid}}/fillform/All Counselor Observation",
+			"forwardButtonTitle" : "View"
+		},
+		"label": "Active Patient",
+		"order": 1,
+		"requiredPrivilege": "app:counselor"
 	}
 }
