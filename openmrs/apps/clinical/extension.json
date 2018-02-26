@@ -44,7 +44,7 @@
     "requiredPrivilege": "app:radiologyOrders"
   },
   "bahmniClinicalPatientsSearchAllActivePatients": {
-    "id": "bahmni.clinical.patients.search.allActiveProviderOPDPatients",
+    "id": "bahmni.clinical.patients.search.allActivePatients",
     "extensionPointId": "org.bahmni.patient.search",
     "type": "config",
     "extensionParams": {
