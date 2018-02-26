@@ -106,7 +106,7 @@
     },
     "label": "Active",
     "order": 6,
-    "requiredPrivilege": "app:clinical"
+    "requiredPrivilege": "app:clinical:labOrder"
   },
   "bahmniClinicalTreatmentLinks": {
     "id": "bahmni.clinical.treatment.links",
