@@ -6,7 +6,7 @@
 	 "extensionParams": {
 	  "searchHandler": "emrapi.sqlSearch.activePatients",
 		 "display":"Active Patients",
-	   "translationKey": "MODULE_LABEL_ACTIVE_PATIENT_KEY",
+	   "translationKey": "MODULE_LABEL_ACTIVE_PATIENT_NURSE_KEY",
 	  "forwardUrl" : "../nurse/#/patient/{{patientUuid}}/fillform/All Nurse Obervations",
 	  "forwardButtonTitle" : "View"
 	 },
@@ -21,12 +21,42 @@
 		"extensionParams": {
 			"searchHandler": "emrapi.sqlSearch.activePatients",
 			"display":"Active Patients",
-			"translationKey": "MODULE_LABEL_ACTIVE_PATIENT_KEY",
+			"translationKey": "MODULE_LABEL_ACTIVE_PATIENT_SOCIAL_WORKER_KEY",
 			"forwardUrl" : "../nurse/#/patient/{{patientUuid}}/fillform/All Social Worker Observation",
 			"forwardButtonTitle" : "View"
 		},
 		"label": "Active Patient",
 		"order": 1,
-		"requiredPrivilege": "app: socialWorker"
+		"requiredPrivilege": "app:socialWorker"
+	},
+	"bahmniClinicalPatientsSearchAllVCTPatients":{
+		"id": "bahmni.clinical.patients.search.VCTAllPatients",
+		"extensionPointId": "org.bahmni.patient.search",
+		"type": "config",
+		"extensionParams": {
+			"searchHandler": "emrapi.sqlSearch.activePatients",
+			"display":"Active Patients",
+			"translationKey": "MODULE_LABEL_ACTIVE_PATIENT_VCT_KEY",
+			"forwardUrl" : "../nurse/#/patient/{{patientUuid}}/fillform/All VCT Observation",
+			"forwardButtonTitle" : "View"
+		},
+		"label": "Active Patient",
+		"order": 1,
+		"requiredPrivilege": "app:vct"
+	},
+	"bahmniClinicalPatientsSearchAllCounselorPatients":{
+		"id": "bahmni.clinical.patients.search.CounselorAllPatients",
+		"extensionPointId": "org.bahmni.patient.search",
+		"type": "config",
+		"extensionParams": {
+			"searchHandler": "emrapi.sqlSearch.activePatients",
+			"display":"Active Patients",
+			"translationKey": "MODULE_LABEL_ACTIVE_PATIENT_COUNSELOR_KEY",
+			"forwardUrl" : "../nurse/#/patient/{{patientUuid}}/fillform/All Counselor Observation",
+			"forwardButtonTitle" : "View"
+		},
+		"label": "Active Patient",
+		"order": 1,
+		"requiredPrivilege": "app:counselor"
 	}
 }

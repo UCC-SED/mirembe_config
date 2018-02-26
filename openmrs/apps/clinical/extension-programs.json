@@ -10,7 +10,7 @@
         },
         "label": "Active",
         "order": 1,
-        "requiredPrivilege": "app:clinical"
+        "requiredPrivilege": "app:vertical"
     },
     "bahmniClinicalPatientsSearchActivePatientsForHIVPrograms": {
         "id": "bahmni.clinical.patients.search.activeHIVPatients",
@@ -23,7 +23,7 @@
         },
         "label": "Active",
         "order": 2,
-        "requiredPrivilege": "app:clinical"
+        "requiredPrivilege": "app:vertical"
     },
     "bahmniClinicalPatientsSearchActivePatientsForTBPrograms": {
         "id": "bahmni.clinical.patients.search.activeTBPatients",
@@ -36,20 +36,7 @@
         },
         "label": "Active",
         "order": 3,
-        "requiredPrivilege": "app:clinical"
-    },
-    "bahmniClinicalPatientsSearchActivePatientsForExposedPrograms": {
-        "id": "bahmni.clinical.patients.search.activeExposedPatients",
-        "extensionPointId": "org.bahmni.patient.search",
-        "type": "config",
-        "extensionParams": {
-            "searchHandler": "emrapi.sqlSearch.activeExposedInfantPatients",
-            "translationKey": "Exposed Infant PROGRAM",
-            "forwardUrl": "#/default/patient/{{patientUuid}}/consultationContext"
-        },
-        "label": "Active",
-        "order": 4,
-        "requiredPrivilege": "app:clinical"
+        "requiredPrivilege": "app:vertical"
     },
     "bahmniClinicalPatientsSearchAllPatients": {
         "id": "bahmni.clinical.patients.search.allPatients",
@@ -61,7 +48,7 @@
         },
         "label": "All",
         "order": 5,
-        "requiredPrivilege": "app:clinical"
+        "requiredPrivilege": "app:vertical"
     },
     "bahmniClinicalConceptSetGroupObservationsHistory": {
         "id": "bahmni.clinical.conceptSetGroup.observations.history",
@@ -179,33 +166,19 @@
         "order": 7,
         "requiredPrivilege": "app:clinical:treatmentTab"
     },
-    "bahmniClinicalBillingTreatmentHIVTab": {
+    "bahmniClinicalBillingTreatmentTab": {
         "id": "bahmni.clinical.billing.treatment",
         "extensionPointId": "org.bahmni.clinical.consultation.board",
         "type": "link",
         "label": "Medications",
-        "translationKey": "CLINICAL_EXTENSION_MEDICATION_HIV_TAB",
+        "translationKey": "MEDICATIONS_BOARD_LABEL_KEY",
         "extensionParams": {
-            "tabConfigName": "hivTabConfig"
+            "tabConfigName": "allMedicationTabConfig"
         },
         "url": "treatment",
         "icon": "fa-user-md",
         "order": 8,
-        "requiredPrivilege": "app:clinical:consultationTab"
-    },
-    "bahmniClinicalBillingTreatmentTBTab": {
-        "id": "bahmni.clinical.billing.treatment",
-        "extensionPointId": "org.bahmni.clinical.consultation.board",
-        "type": "link",
-        "label": "Medications",
-        "translationKey": "TB Drugs",
-        "extensionParams": {
-            "tabConfigName": "tbTabConfig"
-        },
-        "url": "treatment",
-        "icon": "fa-user-md",
-        "order": 9,
-        "requiredPrivilege": "app:clinical:consultationTab"
+        "requiredPrivilege": "app:clinical:treatmentTab"
     },
     "bahmniClinicalConsultationOrders": {
         "id": "bahmni.clinical.consultation.orders",
@@ -217,5 +190,27 @@
         "icon": "icon-user-md",
         "order": 6,
         "requiredPrivilege": "app:clinical:ordersTab"
+    },
+    "referralsTab": {
+        "id": "bahmni.clinical.consultation.referrals",
+        "extensionPointId": "org.bahmni.clinical.consultation.board",
+        "type": "link",
+        "label": "Referrals",
+        "translationKey": "REFERRALS_BOARD_LABEL_KEY",
+        "url": "printPriv",
+        "icon": "fa-user-md",
+        "order": 9,
+        "requiredPrivilege": "app:clinical:referralsTab"
+    },
+    "appointmentTab": {
+        "id": "bahmni.clinical.consultation.appointment",
+        "extensionPointId": "org.bahmni.clinical.consultation.board",
+        "type": "link",
+        "label": "Appointment",
+        "translationKey": "APPOINTMENT_BOARD_LABEL_KEY",
+        "url": "appointment",
+        "icon": "fa-user-md",
+        "order": 9,
+        "requiredPrivilege": "app:clinical:appointmentTab"
     }
 }

@@ -5,5 +5,29 @@
       "id": "org.bahmni.home.dashboard",
       "description": "Bahmni Home Page"
     }
-  ]
+  ],
+  "config": {
+    "locationClinicMapping": {
+      "locations": [
+        {
+          "location": "CTC",
+          "clinicName": "CTC Clinic",
+          "app": "program"
+
+        },
+        {
+          "location": "DNT",
+          "clinicName": "Dental Clinic",
+          "app": "clinic"
+
+        },
+        {
+          "location": "VCT",
+          "clinicName": "Client Transfer",
+          "app": "clinic"
+
+        }
+      ]
+    }
+  }
 }

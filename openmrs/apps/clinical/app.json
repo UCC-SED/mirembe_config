@@ -73,103 +73,20 @@
             "Transfer In",
             "Name of Treatment Supporter",
             "Tel No of Treatment Supporter",
-            "Patient Joined Community Support Organisation",
             "Name of Community Support Organisation",
+            "Date Joined Community Support Group",
+            "Drug Allergies",
             "Prior ARV Exposure",
             "TB Registration No",
-            "HUWANYU/HBC No",
-            "Date Confirmed HIV+",
-            "Date Enrolled In Care",
-            "Date Medically Eligible",
-            "Date Start ART",
-            "Why Eligible",
-            "Functional Status",
-            "Weight",
-            "Drug Allergies"
-          ]
-        },
-        {
-          "programName": "NATIONAL TB AND LEPROSY PROGRAM",
-          "attributeTypes": [
-            "District Registration Number",
-            "Place of Work",
-            "Place of Work-Other",
-            "Reffered by",
-            "Reffered by-Other",
-            "DOT Option",
-            "Name of Treatment Supporter",
-            "Tel No of Treatment Supporter",
-            "Physical Address of Treatment Supporter",
-            "Name of Community Support Organisation",
-            "Classification by site",
-            "Site",
-            "Classification by History of Treatment",
-            "HIV Status",
-            "HIV Care registration number",
-            "CPT",
-            "CPT Start Date",
-            "ART drugs",
-            "ART Start Date"
-          ]
-        },
-        {
-          "programName": "Exposed Infant",
-          "attributeTypes": [
-            "ID_Number",
-            "Name of Mother",
-            "ANC No of Mother",
-            "Infact NVP at Birth",
-            "ARV Drugs Taken by Mother During L&D",
-            "Number of Days Dispensed",
-            "Infact Feeding Practice Birth"
-          ]
-        },
-        {
-          "programName": "Under Five",
-          "attributeTypes": [
-            "ID_Number",
-            "Uzito wa kuzaliwa (kilo)",
-            "Mahali Alipozaliwa",
-            "Aina ya mhudumu aliyemzalisha"
-          ]
-        },
-        {
-          "programName": "MDR - TB Treatment",
-          "attributeTypes": [
-            "DR-TB Registration Number",
-            "Place of Work",
-            "Place of Work-Other",
-            "Reffered by",
-            "Reffered by-Other",
-            "DOT Option",
-            "Name of Treatment Supporter",
-            "Tel No of Treatment Supporter",
-            "Physical Address of Treatment Supporter",
-            "Name of Community Support Organisation",
-            "Classification by site",
-            "Site",
-            "Classification by History of Treatment"
-          ]
-        },
-        {
-          "programName": "TB/Lep Treatment - LEP",
-          "attributeTypes": [
-            "District Registration Number",
-            "Types of patient",
-            "HIV Status"
-          ]
-        },
-        {
-          "programName": "Antenatal Care",
-          "attributeTypes": [
-            "ID_Number",
-            "Namba ya hati punguzo ya chandarua",
-            "Kimo(cm)"
-          ]
-        } , {
-          "programName": "MAT",
-          "attributeTypes": [
-            "ID_Number"
+            "CBHS NUMBER",
+            "Date Diagnosed HIV+",
+            "Date Verified HIV Status",
+            "Date Ready to Start ARV",
+            "Date Start ARV",
+            "WHO Stage",
+            "CD4 Count",
+            "Breast Feeding",
+            "Pregnant"
           ]
         }
       ]
@@ -189,6 +106,9 @@
     "maxConceptSetLevels": 3,
     "allowOnlyCodedDiagnosis": false,
     "conceptSetUI": {
+      "Discussion Topics for Continues Health Education to CTC Client":{
+        "allowAddMore": true
+      },
       "Vitals":{
         "allowAddMore": true
       },
@@ -289,113 +209,6 @@
       },
       "Accepted Family Planning methods": {
         "multiSelect": true
-      },
-      "CTC - Signs and Symptoms and OIs": {
-        "multiSelect": true
-      },
-      "CTC - Other Signs Symptoms and OIs":
-      {
-        "allowAddMore": true
-      },
-      "Patient Support":
-      {
-        "allowAddMore": true
-      },
-      "Drug Allergies":
-      {
-        "allowAddMore": true
-      },
-      "CTC - VisitTypeCode":
-      {
-        "dropdown":true
-      },
-      "CTC - WHO clinical stage (1 - 4)":
-      {
-        "dropdown":true
-      },
-      "CTC - Functional Status":
-      {
-        "dropdown":true
-      },
-      "CTC - TB Screening and Dx":
-      {
-        "dropdown":true
-      },
-      "CTC - TB Rx/ IPT":
-      {
-        "dropdown":true
-      },
-      "CTC - ARV Status":
-      {
-        "dropdown":true
-      },
-      "CTC - ARV Reason - No Start":
-      {
-        "dropdown":true
-      },
-      "CTC - ARV Start":
-      {
-        "dropdown":true
-      },
-      "CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction":
-      {
-        "dropdown":true
-      },
-      "CTC - ARV Reason - Change or Stop because of Treatment Failure":
-      {
-        "dropdown":true
-      },
-      "CTC - ARV Reason - Change or Stop because of Other Reasons":
-      {
-        "dropdown":true
-      },
-      "CTC - ARV Regimens - First Line Adult":
-      {
-        "dropdown":true
-      },
-      "CTC - ARV Regimens - Second Line Adult":
-      {
-        "dropdown":true
-      },
-      "CTC - ARV Regimens - First Line Pediatric":
-      {
-        "dropdown":true
-      },
-      "CTC - ARV Regimens - Second Line Pediatric":
-      {
-        "dropdown":true
-      },
-      "CTC - PMTCT Prophylaxis":
-      {
-        "dropdown":true
-      },
-      "CTC - Reasons for Poor ARV Adherence":
-      {
-        "dropdown":true
-      },
-      "CTC - Nutritional Status":
-      {
-        "dropdown":true
-      },
-      "CTC - Nutritional Supplement":
-      {
-        "dropdown":true
-      },
-      "CTC - Referral to":
-      {
-        "multiSelect": true
-      },
-      "CTC - Follow up Status":
-      {
-        "dropdown":true
-      },
-      "Patient refered from":
-      {
-        "dropdown":true
-      },
-      "Other Referred from":
-      {
-        "dropdown":true
       },
       "Patient Joined Community Support Organisation":
       {
