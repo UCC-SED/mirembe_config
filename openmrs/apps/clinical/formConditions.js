@@ -819,34 +819,42 @@ Bahmni.ConceptSet.FormConditions.rules = {
     'Transfer/Referral': function(formName, formFieldValues, patient) {
         var conditions = {show: [], hide: []};
         var transferType = formFieldValues['Transfer/Referral'];
-        var Transfer_Location = "Transfer Location";
+        var type_referral = "Type of Referral";
         var name_facility = "Name of Facility To be Transfer";
         var Referral_Programs = "Referral Programs";
         var Facility_District = "Facility District";
         var curent_location = "Makazi ya Sasa";
         var new_location = "Makazi Mapya";
-        console.log(transferType);
-        if(transferType=="Referral Out") {
-            conditions.show.push(Transfer_Location)
-            conditions.show.push(name_facility)
+        var address ="Address of Referred Facility";
+        var address2 ="Address of Referred Facility 2";
+        if(transferType == "Referral Out") {
+			conditions.show.push(address2)
+			conditions.show.push(address)
+			conditions.show.push(name_facility)
             conditions.hide.push(Referral_Programs)
              conditions.show.push(Facility_District)
-            conditions.show.push(curent_location)
-            conditions.show.push(new_location)
+            conditions.hide.push(curent_location)
+            conditions.show.push(type_referral);
+            conditions.hide.push(new_location)
 
-        } else if(transferType=="Referral In")
+        } else if(transferType == "Referral In")
         {
+			conditions.hide.push(address2)
+			conditions.hide.push(address)
+			conditions.hide.push(name_facility)
             conditions.show.push(Referral_Programs)
-            conditions.hide.push(Transfer_Location)
-            conditions.hide.push(name_facility)
+            conditions.hide.push(type_referral);
              conditions.hide.push(Facility_District)
             conditions.hide.push(curent_location)
             conditions.hide.push(new_location)
 
         }
+        
         else {
-            conditions.hide.push(Transfer_Location)
-            conditions.hide.push(name_facility)
+			conditions.hide.push(address2)
+			conditions.hide.push(address)
+			conditions.hide.push(name_facility)
+          conditions.hide.push(type_referral);
             conditions.hide.push(Referral_Programs)
              conditions.hide.push(Facility_District)
             conditions.hide.push(curent_location)
