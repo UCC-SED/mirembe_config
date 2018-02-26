@@ -147,7 +147,7 @@
     "url": "../nurse/#/search",
     "icon": "fa-stethoscope",
     "order": 11,
-    "requiredPrivilege": "app:nurse"
+    "requiredPrivilege": "app:vct"
   },
   "labOrders": {
     "id": "bahmni.labOrders",

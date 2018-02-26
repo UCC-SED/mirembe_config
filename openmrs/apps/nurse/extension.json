@@ -42,7 +42,7 @@
 		},
 		"label": "Active Patient",
 		"order": 1,
-		"requiredPrivilege": "app:nurse"
+		"requiredPrivilege": "app:vct"
 	},
 	"bahmniClinicalPatientsSearchAllCounselorPatients":{
 		"id": "bahmni.clinical.patients.search.CounselorAllPatients",
