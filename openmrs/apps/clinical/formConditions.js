@@ -977,6 +977,84 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
 
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
-    }
+    },
+
+         'HTC - Amekubali na Kupimwa hali ya Uambukizi wa VVU': function(formName, formFieldValues, patient) {
+             var conditions = {
+                 show: [],
+                 hide: []
+             };
+             var amekubaliKupimaVVU = formFieldValues['HTC - Amekubali na Kupimwa hali ya Uambukizi wa VVU'];
+
+             var haliYaUambukizi = "HTC - Majibu ya hali ya Uambukizi wa VVU";
+             var kushirikishaMajibu ="HTC - Kushirikisha Majibu";
+
+             console.log(amekubaliKupimaVVU);
+
+ if(amekubaliKupimaVVU=="HTC - Ndiyo")
+ {
+ conditions.show.push(haliYaUambukizi);
+ conditions.show.push(kushirikishaMajibu);
+ }else
+ {
+ conditions.hide.push(haliYaUambukizi);
+ conditions.hide.push(kushirikishaMajibu);
+ }
+
+
+             return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+         },
+
+          'HTC - Kuchunguzwa Kifua Kikuu': function(formName, formFieldValues, patient) {
+                      var conditions = {
+                          show: [],
+                          hide: []
+                      };
+                      var amekubaliKupimaKKU = formFieldValues['HTC - Kuchunguzwa Kifua Kikuu'];
+
+                      var haliYaUambukizi = "HTC - Hali ya Uambukizi wa Kifua Kikuu";
+
+
+
+
+          if(amekubaliKupimaKKU=="HTC - Ndiyo")
+          {
+          conditions.show.push(haliYaUambukizi);
+
+          }else
+          {
+          conditions.hide.push(haliYaUambukizi);
+
+          }
+
+
+                      return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+                  },
+
+          'HTC - Sampuli imepelekwa kwa ajili ya uhakiki wa ubora': function(formName, formFieldValues, patient) {
+                      var conditions = {
+                          show: [],
+                          hide: []
+                      };
+                      var uhakikiUbora = formFieldValues['HTC - Sampuli imepelekwa kwa ajili ya uhakiki wa ubora'];
+
+                      var matokeo = "HTC - Matokeo ya uhakiki wa ubora";
+
+
+
+
+          if(uhakikiUbora)
+          {
+          conditions.show.push(matokeo);
+
+          }else
+          {
+          conditions.hide.push(matokeo);
+
+          }
+
+
+                      return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+                  }
 
 };

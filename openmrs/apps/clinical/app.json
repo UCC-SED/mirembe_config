@@ -61,9 +61,6 @@
       "DR-TB Registration Number": {
         "required": true
       },
-      "Name of Treatment Supporter": {
-        "required": true
-      },
       "programSpecificAttributeTypesDefinition": [
         {
           "programName": "HIV Care and Treatment",
@@ -151,6 +148,12 @@
       "Tuberculosis, Adverse Effects" :{
         "multiSelect" : true,
         "autocomplete" : true
+      },
+      "Signs and Symptoms and OIs":{
+        "multiSelect" : true
+      },
+      "Referral To":{
+        "multiSelect" : true
       },
       "Baseline, Past TB treatment drug regimen" :{
         "multiSelect" : true
@@ -325,6 +328,9 @@
         "allowFutureDates" : true
       },
       "RCH1 - Tarehe ya kurudi": {
+        "allowFutureDates" : true
+      },
+      "HTC - Tarehe ya Kuisha" : {
         "allowFutureDates" : true
       },
       "Next Visit" : {

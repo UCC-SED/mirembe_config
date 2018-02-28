@@ -50,8 +50,8 @@
         ]
       },
       "nationalIdentification": {
-        "title": "National Indentifcation",
-        "translationKey": "National Indentifcation",
+        "title": "National Identifications",
+        "translationKey": "National Identifications",
         "attributes": [
           "National ID Type",
           "ID"

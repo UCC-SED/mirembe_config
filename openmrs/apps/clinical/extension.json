@@ -271,7 +271,7 @@
     "order": 9,
     "requiredPrivilege": "app:clinical:appointmentTab"
   },
-    "bahmniClinicalConsultationOrders": {
+  "bahmniClinicalConsultationOrders": {
     "id": "bahmni.clinical.consultation.orders",
     "extensionPointId": "org.bahmni.clinical.consultation.board",
     "type": "link",
