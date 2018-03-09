@@ -116,6 +116,9 @@
         "durationRequired": false,
         "allowAddMore": true
       },
+      "IPD OBS CHART": {
+		"allowAddMore": true  
+	  },
       "All Observation Templates": {
         "showPanelView": true
       },

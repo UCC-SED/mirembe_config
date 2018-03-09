@@ -37,6 +37,7 @@
                     "numberOfVisits": 2
                 }
             },
+              
             "visits": {
                 "translationKey": "DASHBOARD_TITLE_VISITS_KEY",
                 "type": "visits",
@@ -101,6 +102,37 @@
                     "showDetailsButton": true
                 }
             },
+            
+            "ipdObsChart": {
+                "translationKey": "IPD OBSERVATION CHART",
+                "type": "observation",
+                "isObservation": true,
+                "hideEmptyDisplayControl": true,
+                "displayOrder": 1,
+                "dashboardConfig": {
+                    "conceptNames": [
+                        "IPD OBS CHART - TEM", 
+                        "IPD OBS CHART - RES", 
+                        "IPD OBS CHART - PULSE",
+                        "IPD OBS CHART - BP",
+                        "TYPE OF MEDICINE DOSE GIVEN"
+                        
+                    ],
+                    "showDetailsButton": true,
+                    "numberOfVisits": 2
+                },
+                "expandedViewConfig": {
+                    "translationKey": "DASHBOARD_TITLE_TREATMENTS_KEY",
+                    "showFlowSheet": true,
+                    "showListView": true,
+                    "showRoute": true,
+                    "showDrugForm": true,
+                    "numberOfVisits": 10,
+                    "showOtherActive": true,
+                    "showDetailsButton": true
+                }
+            },
+             
             "programs": {
                 "translationKey": "DASHBOARD_TITLE_PROGRAMS_KEY",
                 "hideEmptyDisplayControl": true,
