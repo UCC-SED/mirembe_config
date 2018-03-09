@@ -68,6 +68,77 @@
     "name": "OPD/IPD Visit Count",
     "type": "IpdOpdVisitCount"
   },
+   "IPD DETAILED":{
+    "name": "IPD DETAILED",
+    "type": "visits",
+    "config": {
+        "forDataAnalysis": true,
+        "patientAttributes": ["caste", "class", "education", "occupation", "primaryContact"],
+        "visitAttributes": ["Visit Status", "Admission Status"],
+        "patientAddresses": ["address3", "city_village"],
+        "applyDateRangeFor": "visitStartDate",
+        "visitTypesToFilter": ["IPD"],
+        "excludeColumns": ["Patient Name", "Patient Id", "Visit Id"],
+        "additionalPatientIdentifiers": ["National Id"]
+	}
+},
+ "ipdStartedVisit": {
+       "name": "IPD VISITS (Started visits Date/Gender)",
+       "type": "aggregation",
+       "config": {
+           "report":{
+               "type": "visits",
+               "config": {
+                   "conceptNamesToFilter":[ "Gender", "Date started"],
+                   "showVisitInfo" : true,
+                   "forDataAnalysis": true,
+                   "applyDateRangeFor": "visitStartDate",
+                   "visitAttributes": ["Visit Status", "Admission Status"],
+                    "visitTypesToFilter": ["IPD"]
+               }
+           },
+           "rowGroups": [
+               "Gender", "Date started"
+           ],
+           "columnGroups": [
+           
+           ],
+           "distinctGroups": [
+               "Patient Identifier"
+           ],
+            "showTotalRow":true,
+            "showTotalColumn":true
+       }
+   },
+   
+   "ipdStopVisit": {
+       "name": "IPD VISITS (Date Of Discharge/Gender)",
+       "type": "aggregation",
+       "config": {
+           "report":{
+               "type": "visits",
+               "config": {
+                   "conceptNamesToFilter":[ "Gender", "Date started"],
+                   "showVisitInfo" : true,
+                   "forDataAnalysis": true,
+                   "applyDateRangeFor": "dateOfDischarge",
+                   "visitAttributes": ["Visit Status", "Admission Status"],
+                    "visitTypesToFilter": ["IPD"]
+               }
+           },
+           "rowGroups": [
+               "Gender", "Date started"
+           ],
+           "columnGroups": [
+           
+           ],
+           "distinctGroups": [
+               "Patient Identifier"
+           ],
+            "showTotalRow":true,
+            "showTotalColumn":true
+       }
+   },
   "IPDPatientsReport": {
     "name": "IPD Patients Report",
     "type": "ipdPatients",
