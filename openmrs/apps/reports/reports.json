@@ -1,4 +1,18 @@
 {
+  "htcgenericreport": {
+    "name": "VCT Registered Patient",
+    "type": "MRSGeneric",
+    "config": {
+      "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/htcService.sql"
+    }
+  },
+  "toCTC": {
+    "name": "Wateja Wanaopelekwa CTC",
+    "type": "MRSGeneric",
+    "config": {
+      "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/sentToCTC.sql"
+    }
+  },
   "visitReport10": {
     "name": "Visit Report",
     "type": "visits",

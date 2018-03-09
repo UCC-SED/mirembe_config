@@ -5,7 +5,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             show: [],
             hide: []
         };
-        if (patient['gender'] == 'F') {
+        if (patient['gender'] == 'F' ) {
             conditions.show.push("Posture")
         } else {
             conditions.hide.push("Posture")
@@ -13,6 +13,36 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         return conditions;
     },
+      'HTC - Hali ya Ujauzito': function(formName, formFieldValues, patient) {
+            var conditions = {
+                show: [],
+                hide: []
+            };
+            var haliYaUjauzito = "HTC - Hali ya Ujauzito";
+console.log("Circular");
+            if (patient['gender'] == 'F' && patient['age'] > 10) {
+                conditions.show.push(haliYaUjauzito);
+            } else {
+                conditions.hide.push(haliYaUjauzito);
+            }
+
+            return conditions;
+        },
+       'Regista ya Huduma ya Upimaji na Ushauri': function(formName, formFieldValues, patient) {
+
+            var conditions = {
+                show: [],
+                hide: []
+            };
+            console.log("Here");
+            if (patient['gender'] == 'F' && patient['age'] > 10) {
+                conditions.show.push("HTC - Hali ya Ujauzito")
+            } else {
+                conditions.hide.push("HTC - Hali ya Ujauzito")
+            }
+
+            return conditions;
+        },
     'Payment Category': function(formName, formFieldValues, patient) {
         var conditions = {
             show: [],
@@ -129,23 +159,6 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.hide.push(variable3);
             conditions.hide.push(variable4);
         }
-        return conditions;
-    },
-
-
-    'HTC - Hali ya Ujauzito': function(formName, formFieldValues, patient) {
-        var conditions = {
-            show: [],
-            hide: []
-        };
-        var haliYaUjauzito = "HTC - Hali ya Ujauzito";
-
-        if (patient['gender'] == 'M') {
-            conditions.hide.push(haliYaUjauzito);
-        } else {
-            conditions.show.push(haliYaUjauzito);
-        }
-
         return conditions;
     },
 
