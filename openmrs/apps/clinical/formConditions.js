@@ -13,7 +13,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         return conditions;
     },
-      'HTC - Hali ya Ujauzito': function(formName, formFieldValues, patient) {
+ 'HTC - Hali ya Ujauzito': function(formName, formFieldValues, patient) {
             var conditions = {
                 show: [],
                 hide: []
@@ -855,7 +855,7 @@ console.log("Circular");
 
         var address ="Address of Referred Facility";
         var address2 ="Address of Referred Facility 2";
-        if(transferType == "Referral Out") {
+        if(transferType == "Reffer Out") {
 			conditions.show.push(address2)
 			conditions.show.push(address)
 			conditions.show.push(name_facility)
@@ -865,7 +865,7 @@ console.log("Circular");
             conditions.show.push(type_referral);
             conditions.hide.push(new_location)
 
-        } else if(transferType == "Referral In")
+        } else if(transferType == "Transfer Within")
         {
 			conditions.hide.push(address2)
 			conditions.hide.push(address)
