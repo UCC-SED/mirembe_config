@@ -4,11 +4,12 @@
 	 "extensionPointId": "org.bahmni.patient.search",
 	 "type": "config",
 	 "extensionParams": {
-	  "searchHandler": "emrapi.sqlSearch.activePatients",
-		 "display":"Active Patients",
+	  "searchHandler": "emrapi.sqlSearch.activeNursePatients",
+       "display":"Active Patients",
 	   "translationKey": "MODULE_LABEL_ACTIVE_PATIENT_NURSE_KEY",
 	  "forwardUrl" : "../nurse/#/patient/{{patientUuid}}/fillform/All Nurse Obervations",
-	  "forwardButtonTitle" : "View"
+	  "forwardButtonTitle" : "View",
+      "view":"tabular"
 	 },
 	 "label": "Active Patient",
 	 "order": 1,
