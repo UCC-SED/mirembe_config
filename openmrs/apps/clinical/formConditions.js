@@ -52,7 +52,6 @@ console.log("Circular");
         var insuranceID = 'Insurance ID';
         var InsuranceType = 'Insurance Type';
 
-        console.log(paymentCategory);
         if (paymentCategory == "Insurance") {
             conditions.show.push(insuranceID);
             conditions.show.push(InsuranceType);
@@ -285,20 +284,6 @@ console.log("Circular");
         }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
-    'ART Adherence Status': function(formName, formFieldValues, patient) {
-        var conditions = {
-            show: [],
-            hide: []
-        };
-        var poor = "ART Adherence Status Poor";
-        var conditionConcept = formFieldValues['ART Adherence Status'];
-        if (conditionConcept == "ART Adherence Status, POOR") {
-            conditions.show.push(poor)
-        } else {
-            conditions.hide.push(poor)
-        }
-        return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
-    },
     'ART Adherence Status Poor': function(formName, formFieldValues, patient) {
         var conditions = {
             show: [],
@@ -490,8 +475,9 @@ console.log("Circular");
         };
 
         var arvAdherencestatus = formFieldValues['CTC - ARV Adherence Status'];
+  console.log(arvAdherencestatus);
 
-        if (arvAdherencestatus == "2 P(Poor) - 2 or more missed days") {
+        if (arvAdherencestatus == "2 P(Poor)- Less than 95% of adherence") {
             conditions.show.push("CTC - Reasons for Poor ARV Adherence");
 
         } else {

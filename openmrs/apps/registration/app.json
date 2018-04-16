@@ -37,7 +37,8 @@
           "Name of Area leader/Neighbour",
           "Tel No of Name of Area leader/Neighbour",
           "Religion",
-          "New patient?"
+          "New patient?",
+          "CRIMINAL CASE NO"
         ]
       },
       "nextOfKinInformation": {
@@ -103,7 +104,7 @@
         "shortcutKey": "c"
       }
     ],
-    "Telephone Contact": {
+    "providerInCharge": {
       "required": true
     },
     "conceptSetUI": {
