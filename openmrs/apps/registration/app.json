@@ -37,8 +37,7 @@
           "Name of Area leader/Neighbour",
           "Tel No of Name of Area leader/Neighbour",
           "Religion",
-          "New patient?",
-          "CRIMINAL CASE NO"
+          "New patient?"
         ]
       },
       "nextOfKinInformation": {
@@ -56,7 +55,17 @@
         "attributes": [
           "National ID Type",
           "ID"
-        ]
+        ],
+        "crimanalCaseInformations": {
+          "title": "Criminal Case Information",
+          "translationKey": "Criminal Case Information",
+          "attributes": [
+            "CRIMINAL CASE NO",
+            "Category",
+            "Reefering Court",
+            "Date",
+            "Offence charged"
+          ]
       },
       "hidden": {
         "attributes": [
