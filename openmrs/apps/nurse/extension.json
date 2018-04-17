@@ -67,7 +67,7 @@
 		"extensionParams": {
 			"searchHandler": "emrapi.sqlSearch.activePatients",
 			"display":"Active Patients",
-			"translationKey": "MODULE_LABEL_ACTIVE_PATIENT_COUNSELOR_KEY",
+			"translationKey": "MODULE_LABEL_ACTIVE_PATIENT_THERAPY_KEY",
 			"forwardUrl" : "../nurse/#/patient/{{patientUuid}}/fillform/All Therapy Observation",
 			"forwardButtonTitle" : "View"
 		},

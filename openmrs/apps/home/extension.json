@@ -173,7 +173,7 @@
     "id": "bahmni.nurse.therapy",
     "extensionPointId": "org.bahmni.home.dashboard",
     "type": "link",
-    "translationKey": "MODULE_LABEL_COUNSELOR_KEY",
+    "translationKey": "MODULE_LABEL_THERAPY_KEY",
     "url": "../nurse/#/search",
     "icon": "fa-stethoscope",
     "order": 4,
