@@ -55,17 +55,18 @@
         "attributes": [
           "National ID Type",
           "ID"
-        ],
-        "crimanalCaseInformations": {
-          "title": "Criminal Case Information",
-          "translationKey": "Criminal Case Information",
-          "attributes": [
-            "CRIMINAL CASE NO",
-            "Category",
-            "Reefering Court",
-            "Date",
-            "Offence charged"
-          ]
+        ]
+      },
+      "crimanalCaseInformations": {
+        "title": "Criminal Case Information",
+        "translationKey": "Criminal Case Information",
+        "attributes": [
+          "CRIMINAL CASE NO",
+          "Category",
+          "Reefering Court",
+          "Date",
+          "Offence charged"
+        ]
       },
       "hidden": {
         "attributes": [
