@@ -74,6 +74,6 @@ FROM
             openmrs.diagnosis_concept_view)
     JOIN concept_name cn ON cn.concept_id = c.concept_id
     WHERE
-         v.date_created < '2017-09-29'
+         v.date_created between '#startDate#' and '#endDate#' and v.visit_type_id=3
     GROUP BY cn.name
     ORDER BY cn.name DESC) AS c ON c.id = dcv.concept_id;

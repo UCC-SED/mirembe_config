@@ -68,6 +68,15 @@
           "Offence charged"
         ]
       },
+      "refferalInformation": {
+        "title": "Referrall Information",
+        "translationKey": "Referrall Information",
+        "attributes": [
+          "Referred From",
+          "Referred Date",
+          "Referred ID"
+        ]
+      }
       "hidden": {
         "attributes": [
           "primaryContact"
