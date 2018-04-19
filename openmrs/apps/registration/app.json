@@ -76,7 +76,7 @@
           "Referred Date",
           "Referred ID"
         ]
-      }
+      },
       "hidden": {
         "attributes": [
           "primaryContact"
