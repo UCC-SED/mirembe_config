@@ -5,7 +5,7 @@
     "title_text": " "
   },
   "loginPage": {
-    "logo": "/bahmni_config/openmrs/images/tanzaniaLogoFull.png",
+    "logo": "/bahmni_config/openmrs/images/TanzaniaLogo.png",
     "showHeaderText": false,
     "showTitleText": false
   },
