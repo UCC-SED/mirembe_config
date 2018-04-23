@@ -57,6 +57,26 @@
           "ID"
         ]
       },
+      "crimanalCaseInformations": {
+        "title": "Criminal Case Information",
+        "translationKey": "Criminal Case Information",
+        "attributes": [
+          "CRIMINAL CASE NO",
+          "Category",
+          "Reefering Court",
+          "Date",
+          "Offence charged"
+        ]
+      },
+      "refferalInformation": {
+        "title": "Referrall Information",
+        "translationKey": "Referrall Information",
+        "attributes": [
+          "Referred From",
+          "Referred Date",
+          "Referred ID"
+        ]
+      },
       "hidden": {
         "attributes": [
           "primaryContact"
@@ -103,7 +123,7 @@
         "shortcutKey": "c"
       }
     ],
-    "Telephone Contact": {
+    "providerInCharge": {
       "required": true
     },
     "conceptSetUI": {

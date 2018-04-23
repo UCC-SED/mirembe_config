@@ -25,7 +25,7 @@
   "config": {
     "enableRadiologyOrderOptions":["Urgent","NeedsPrint"],
     "gothomisIntegrationStatus":false,
-    "quickPrints":false,
+    "quickPrints":true,
     "networkConnectivity" : {
       "showNetworkStatusMessage": true,
       "networkStatusCheckInterval": 5000,
@@ -352,6 +352,9 @@
       "ANC - Mimba zilizoharibika":
       {
         "allowAddMore": true
+      },
+      "Billing" : {
+        "required": true
       },
       "conceptSetUI": {
         "TB - Adverse Effects": {

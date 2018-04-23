@@ -5,5 +5,7 @@
   "MODULE_LABEL_ACTIVE_PATIENT_SOCIAL_WORKER_KEY" : "Social Worker Active Patients",
   "MODULE_LABEL_ACTIVE_PATIENT_VCT_KEY" : "VCT Active Patients",
   "MODULE_LABEL_ACTIVE_PATIENT_COUNSELOR_KEY" : "Counselor Active Patients",
-  "MODULE_LABEL_ACTIVE_PATIENT_NURSE_KEY" : "Nurse Active Patients"
+  "MODULE_LABEL_ACTIVE_PATIENT_NURSE_KEY" : "Nurse Active Patients",
+  "MODULE_LABEL_THERAPY_KEY" : "Therapy Clinic",
+  "MODULE_LABEL_ACTIVE_PATIENT_THERAPY_KEY" : "Therapy Active Patients"
 }

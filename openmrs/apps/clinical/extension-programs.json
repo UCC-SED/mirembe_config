@@ -4,7 +4,7 @@
         "extensionPointId": "org.bahmni.patient.search",
         "type": "config",
         "extensionParams": {
-            "searchHandler": "emrapi.sqlSearch.newPatients",
+            "searchHandler": "emrapi.sqlSearch.activePatients",
             "translationKey": "MODULE_LABEL_NEW_ACTIVE_KEY",
             "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
         },
