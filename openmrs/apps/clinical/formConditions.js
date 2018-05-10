@@ -28,6 +28,7 @@ console.log("Circular");
 
             return conditions;
         },
+
        'Regista ya Huduma ya Upimaji na Ushauri': function(formName, formFieldValues, patient) {
 
             var conditions = {
@@ -86,7 +87,28 @@ console.log("Circular");
         return conditions;
     },
 
-
+    'ANC - Umri wa mimba kwa wiki': function(formName, formFieldValues, patient) {
+        var conditions = {
+            show: [],
+            hide: []
+        };
+        var other = formFieldValues['ANC - Umri wa mimba kwa wiki'];
+        var variable = 'ANC - Kitangulizi kuanzia wiki ya 36';
+        var variable2 = 'ANC - Mtoto anacheza baada ya wiki 20 Data';
+        var variable3 = 'ANC - Mapigo ya moyo wa mtoto baada ya wiki 20 Data';
+        var variable4 = 'ANC - Mlalo wa mtoto';
+        console.log(other);
+        if (other > 20) {
+            conditions.show.push(variable);
+            conditions.show.push(variable2);
+            conditions.show.push(variable3);
+        } else {
+            conditions.hide.push(variable);
+            conditions.hide.push(variable2);
+            conditions.hide.push(variable3);
+        }
+        return conditions;
+    },
 
     'ANC - Chupa imepasuka(Ndio/Hapana)': function(formName, formFieldValues, patient) {
         var conditions = {

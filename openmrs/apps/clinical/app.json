@@ -85,6 +85,19 @@
             "Breast Feeding",
             "Pregnant"
           ]
+        },
+        {
+          "programName": "RCH",
+          "attributeTypes": [
+            "ID_Number",
+            "Namba ya hati punguzo ya chandarua",
+            "Kimo(cm)"
+          ]
+        } , {
+          "programName": "MAT",
+          "attributeTypes": [
+            "ID_Number"
+          ]
         }
       ]
     },
