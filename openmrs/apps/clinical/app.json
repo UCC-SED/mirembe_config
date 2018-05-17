@@ -87,16 +87,35 @@
           ]
         },
         {
-          "programName": "RCH",
+          "programName": "RCH - Wajawazito",
           "attributeTypes": [
             "ID_Number",
             "Namba ya hati punguzo ya chandarua",
-            "Kimo(cm)"
+            "ANC- Jina la mume/mwenza",
+            "ANC - Umri wa mume/mwenza",
+            "ANC - Elimu ya mume/mwenza",
+            "ANC - Kazi ya mume/mwenza",
+            "ANC - Tarehe ya kwanza ya hedhi ya mara ya mwisho (LNMP)"
           ]
-        } , {
+        },
+        {
+          "programName": "RCH - Watoto",
+          "attributeTypes": [
+            "ID_Number",
+            "RCH1 - Uzito (kilo)",
+            "RCH1 - Mahali alipozaliwa",
+            "RCH1 - Aina ya mhudumu aliyemzalisha"
+          ]
+        },
+        {
           "programName": "MAT",
           "attributeTypes": [
-            "ID_Number"
+            "ID_Number",
+            "MAT - Idadi ya watoto",
+            "MAT - Makazi",
+            "MAT - Jina",
+            "MAT - Code yake",
+            "MAT - Namba ya simu"
           ]
         }
       ]
@@ -429,6 +448,12 @@
           "visitType": "RCH",
           "defaultObservationConceptName": [
             "All RCH Observations"
+          ]
+        },
+        {
+          "visitType": "MAT",
+          "defaultObservationConceptName": [
+            "All MAT Observations"
           ]
         }
       ]

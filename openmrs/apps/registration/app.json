@@ -26,8 +26,14 @@
       },
       {
         "visitType": "RCH",
-        "forwardUrl": "../registration/index.html#/search",
-        "translationKey": "Save & Start VCT Counselling",
+        "forwardUrl": "../nurse/#/patient/{{patientUuid}}/fillform/All RCH Observation",
+        "translationKey": "Save & Start RCH Visit",
+        "shortcutKey": "c"
+      },
+      {
+        "visitType": "MAT",
+        "forwardUrl": "../nurse/#/patient/{{patientUuid}}/fillform/All MAT Observation",
+        "translationKey": "Save & Start MAT Visit",
         "shortcutKey": "c"
       }
     ],
