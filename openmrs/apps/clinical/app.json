@@ -451,6 +451,12 @@
           ]
         },
         {
+          "visitType": "RCH 1",
+          "defaultObservationConceptName": [
+            "All RCH1 - Watoto Observations"
+          ]
+        },
+        {
           "visitType": "MAT",
           "defaultObservationConceptName": [
             "All MAT Observations"
