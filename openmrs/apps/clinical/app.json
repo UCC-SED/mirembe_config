@@ -119,6 +119,13 @@
       "IPD OBS CHART": {
 		"allowAddMore": true  
 	  },
+	  
+	  "PROGRESS NOTES": {
+	  "allowAddMore": true
+	  },
+	  
+	  
+	  
       "All Observation Templates": {
         "showPanelView": true
       },

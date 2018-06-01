@@ -113,7 +113,7 @@
     "hideRelationShipDuration": true,
     "showTribeName": true,
     "showCasteSameAsLastNameCheckbox": false,
-    "patientAttendanceMode": "room",
+    "patientAttendanceMode": "provider",
     "assumedBirthDay": "01/07",
     "printOptions": [
       {
