@@ -26,6 +26,18 @@
           "clinicName": "Client Transfer",
           "app": "clinic"
 
+        },
+        {
+          "location": "RCH",
+          "clinicName": "RCH Clinic",
+          "app": "program"
+
+        },
+        {
+          "location": "MAT",
+          "clinicName": "MAT Clinic",
+          "app": "program"
+
         }
       ]
     }

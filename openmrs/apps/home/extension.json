@@ -137,7 +137,7 @@
     "url": "../clinical/#/default/patient/search",
     "icon": "fa-inr",
     "order": 5,
-    "requiredPrivilege": "app:billing"
+    "requiredPrivilege": "app:prescription"
   },
   "vct": {
     "id": "bahmni.nurse.vct",

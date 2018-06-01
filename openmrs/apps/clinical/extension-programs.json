@@ -6,7 +6,7 @@
         "extensionParams": {
             "searchHandler": "emrapi.sqlSearch.activePatients",
             "translationKey": "MODULE_LABEL_NEW_ACTIVE_KEY",
-            "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
+            "forwardUrl": "#/default/patient/{{patientUuid}}/consultationContext"
         },
         "label": "Active",
         "order": 1,
@@ -19,6 +19,45 @@
         "extensionParams": {
             "searchHandler": "emrapi.sqlSearch.activeHIVPatients",
             "translationKey": "CTC Active Patients",
+            "forwardUrl": "#/default/patient/{{patientUuid}}/consultationContext"
+        },
+        "label": "Active",
+        "order": 2,
+        "requiredPrivilege": "app:vertical"
+    },
+    "bahmniClinicalPatientsSearchActivePatientsForRCHPrograms": {
+    "id": "bahmni.clinical.patients.search.activeRCHPatients",
+    "extensionPointId": "org.bahmni.patient.search",
+    "type": "config",
+    "extensionParams": {
+        "searchHandler": "emrapi.sqlSearch.activeRCHPatients",
+        "translationKey": "RCH Active Patients",
+        "forwardUrl": "#/default/patient/{{patientUuid}}/consultationContext"
+    },
+    "label": "Active",
+    "order": 2,
+    "requiredPrivilege": "app:vertical"
+    },
+    "bahmniClinicalPatientsSearchActivePatientsForMATPrograms": {
+        "id": "bahmni.clinical.patients.search.activeMATPatients",
+        "extensionPointId": "org.bahmni.patient.search",
+        "type": "config",
+        "extensionParams": {
+            "searchHandler": "emrapi.sqlSearch.activeMATPatients",
+            "translationKey": "MAT Active Patients",
+            "forwardUrl": "#/default/patient/{{patientUuid}}/consultationContext"
+        },
+        "label": "Active",
+        "order": 2,
+        "requiredPrivilege": "app:vertical"
+    },
+    "bahmniClinicalPatientsSearchActivePatientsForTBPrograms": {
+        "id": "bahmni.clini#cal.patients.search.activeTBPatients",
+        "extensionPointId": "org.bahmni.patient.search",
+        "type": "config",
+        "extensionParams": {
+            "searchHandler": "emrapi.sqlSearch.activeTBPatients",
+            "translationKey": "TB Active Patients",
             "forwardUrl": "#/default/patient/{{patientUuid}}/consultationContext"
         },
         "label": "Active",
