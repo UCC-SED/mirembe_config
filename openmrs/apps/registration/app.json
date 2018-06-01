@@ -46,7 +46,11 @@
         "attributes": [
           "Name",
           "Next of Kin Contact Number",
-          "Next of Kin Type"
+          "Next of Kin Type",
+		  "Second Next of kin Name",
+		  "Second Next of kin Contact Number",
+		  "Second Next of Kin Type"
+
         ]
       },
       "nationalIdentification": {
@@ -61,7 +65,7 @@
         "title": "Criminal Case Information",
         "translationKey": "Criminal Case Information",
         "attributes": [
-          "CRIMINAL CASE NO",
+          "CRIMINAL CASE NO.",
           "Category",
           "Reefering Court",
           "Date",
@@ -69,8 +73,8 @@
         ]
       },
       "refferalInformation": {
-        "title": "Referrall Information",
-        "translationKey": "Referrall Information",
+        "title": "Referral Information",
+        "translationKey": "Referral Information",
         "attributes": [
           "Referred From",
           "Referred Date",
