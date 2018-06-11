@@ -24,6 +24,7 @@
   ],
   "config": {
     "enableRadiologyOrderOptions":["Urgent","NeedsPrint"],
+    "enableLabOrderOptions": "Urgent",
     "gothomisIntegrationStatus":false,
     "quickPrints":false,
     "networkConnectivity" : {
@@ -102,6 +103,12 @@
     "visitTypeForRetrospectiveEntries": "Special OPD",
     "maxConceptSetLevels": 3,
     "allowOnlyCodedDiagnosis": false,
+    "conceptResultMap": {
+	    "Family and social history": {
+		"mapTo": "HEIGHT",
+		"dataType": "obs"
+		}
+	},
     "conceptSetUI": {
       "Discussion Topics for Continues Health Education to CTC Client":{
         "allowAddMore": true

@@ -17,7 +17,7 @@
     "url": "../clinical/#/programs/patient/search",
     "icon": "icon-bahmni-program",
     "order": 7,
-    "requiredPrivilege": "app:vertical"
+    "requiredPrivilege": "app:clinical"
   },
   "clinical": {
     "id": "bahmni.clinical",

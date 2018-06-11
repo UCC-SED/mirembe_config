@@ -16,6 +16,12 @@
 
         },
         {
+          "location": "TB",
+          "clinicName": "TB Clinic",
+          "app": "program"
+
+        },
+        {
           "location": "DNT",
           "clinicName": "Dental Clinic",
           "app": "clinic"
