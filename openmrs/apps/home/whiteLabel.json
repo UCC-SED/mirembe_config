@@ -1,11 +1,16 @@
 {
   "homePage": {
+<<<<<<< HEAD
     "header_text": "<b>WELCOME TO<br />TANZANIA MIREMBE EFMS",
     "logo": "/bahmni_config/openmrs/images/tanzaniaLogoFull.png",
+=======
+    "header_text": "MIREMBE MENTAL HEALTH HOSPITAL",
+    "logo": "/bahmni_config/openmrs/images/TanzaniaLogo.png",
+>>>>>>> fb3ce9d3bb6f9dd93efcb11ff8ae46c50fca8df0
     "title_text": " "
   },
   "loginPage": {
-    "logo": "/bahmni_config/openmrs/images/tanzaniaLogoFull.png",
+    "logo": "/bahmni_config/openmrs/images/TanzaniaLogo.png",
     "showHeaderText": false,
     "showTitleText": false
   },

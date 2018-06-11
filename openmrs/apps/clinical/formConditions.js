@@ -28,6 +28,7 @@ console.log("Circular");
 
             return conditions;
         },
+
        'Regista ya Huduma ya Upimaji na Ushauri': function(formName, formFieldValues, patient) {
 
             var conditions = {
@@ -52,7 +53,6 @@ console.log("Circular");
         var insuranceID = 'Insurance ID';
         var InsuranceType = 'Insurance Type';
 
-        console.log(paymentCategory);
         if (paymentCategory == "Insurance") {
             conditions.show.push(insuranceID);
             conditions.show.push(InsuranceType);
@@ -74,8 +74,50 @@ console.log("Circular");
         var variable = 'ANC - Amezaa mara ngapi';
         var variable2 = 'ANC - Watoto walio hai';
         var variable3 = 'ANC - Mimba zilizoharibika';
+        var variable4 = 'ANC - Miaka 10 au zaidi tokea mimba ya mwisho Data';
+        var variable5 = 'ANC - Kujifungua kwa kupasuliwa Data';
+        var variable6 = 'ANC - Kuzaa mtoto mfu/kifo cha mtoto mchanga (wk 1) Data';
+        var variable7 = 'ANC - Kuzalishwa kwa kupasuliwa au vacum Data';
+        var variable8 = 'ANC - Kutoka damu nyingi baada ya kujifungua Data';
+        var variable9 = 'ANC - Kondo la nyuma kukwama Data';
         console.log(other);
         if (other > 1) {
+            conditions.show.push(variable);
+            conditions.show.push(variable2);
+            conditions.show.push(variable3);
+            conditions.show.push(variable4);
+            conditions.show.push(variable5);
+            conditions.show.push(variable6);
+            conditions.show.push(variable7);
+            conditions.show.push(variable8);
+            conditions.show.push(variable9);
+
+        } else {
+            conditions.hide.push(variable);
+            conditions.hide.push(variable2);
+            conditions.hide.push(variable3);
+            conditions.hide.push(variable4);
+            conditions.hide.push(variable5);
+            conditions.hide.push(variable6);
+            conditions.hide.push(variable7);
+            conditions.hide.push(variable8);
+            conditions.hide.push(variable9);
+        }
+        return conditions;
+    },
+
+    'ANC - Umri wa mimba kwa wiki': function(formName, formFieldValues, patient) {
+        var conditions = {
+            show: [],
+            hide: []
+        };
+        var other = formFieldValues['ANC - Umri wa mimba kwa wiki'];
+        var variable = 'ANC - Kitangulizi kuanzia wiki ya 36';
+        var variable2 = 'ANC - Mtoto anacheza baada ya wiki 20 Data';
+        var variable3 = 'ANC - Mapigo ya moyo wa mtoto baada ya wiki 20 Data';
+        var variable4 = 'ANC - Mlalo wa mtoto';
+        console.log(other);
+        if (other > 20) {
             conditions.show.push(variable);
             conditions.show.push(variable2);
             conditions.show.push(variable3);
@@ -86,8 +128,6 @@ console.log("Circular");
         }
         return conditions;
     },
-
-
 
     'ANC - Chupa imepasuka(Ndio/Hapana)': function(formName, formFieldValues, patient) {
         var conditions = {
@@ -285,20 +325,6 @@ console.log("Circular");
         }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
-    'ART Adherence Status': function(formName, formFieldValues, patient) {
-        var conditions = {
-            show: [],
-            hide: []
-        };
-        var poor = "ART Adherence Status Poor";
-        var conditionConcept = formFieldValues['ART Adherence Status'];
-        if (conditionConcept == "ART Adherence Status, POOR") {
-            conditions.show.push(poor)
-        } else {
-            conditions.hide.push(poor)
-        }
-        return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
-    },
     'ART Adherence Status Poor': function(formName, formFieldValues, patient) {
         var conditions = {
             show: [],
@@ -490,8 +516,9 @@ console.log("Circular");
         };
 
         var arvAdherencestatus = formFieldValues['CTC - ARV Adherence Status'];
+  console.log(arvAdherencestatus);
 
-        if (arvAdherencestatus == "2 P(Poor) - 2 or more missed days") {
+        if (arvAdherencestatus == "2 P(Poor)- Less than 95% of adherence") {
             conditions.show.push("CTC - Reasons for Poor ARV Adherence");
 
         } else {

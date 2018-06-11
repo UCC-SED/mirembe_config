@@ -14,5 +14,6 @@
     "MODULE_LABEL_APPOINTMENT_SCHEDULING_KEY": "Appointment Scheduling",
     "MODULE_LABEL_NURSE_KEY":"Nursing",
     "MODULE_LABEL_VCT_KEY":"VCT",
-    "MODULE_LABEL_COUNSELOR_KEY":"Counselor"
+    "MODULE_LABEL_COUNSELOR_KEY":"Counselor",
+    "MODULE_LABEL_THERAPY_KEY" : "Therapy Clinic"
 }

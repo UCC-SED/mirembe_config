@@ -23,6 +23,18 @@
         "forwardUrl": "../nurse/#/patient/{{patientUuid}}/fillform/All VCT Observation",
         "translationKey": "Save & Start VCT Counselling",
         "shortcutKey": "c"
+      },
+      {
+        "visitType": "RCH",
+        "forwardUrl": "../nurse/#/patient/{{patientUuid}}/fillform/All RCH Observation",
+        "translationKey": "Save & Start RCH Visit",
+        "shortcutKey": "c"
+      },
+      {
+        "visitType": "MAT",
+        "forwardUrl": "../nurse/#/patient/{{patientUuid}}/fillform/All MAT Observation",
+        "translationKey": "Save & Start MAT Visit",
+        "shortcutKey": "c"
       }
     ],
     "patientInformation": {
@@ -46,7 +58,11 @@
         "attributes": [
           "Name",
           "Next of Kin Contact Number",
-          "Next of Kin Type"
+          "Next of Kin Type",
+		  "Second Next of kin Name",
+		  "Second Next of kin Contact Number",
+		  "Second Next of Kin Type"
+
         ]
       },
       "nationalIdentification": {
@@ -55,6 +71,26 @@
         "attributes": [
           "National ID Type",
           "ID"
+        ]
+      },
+      "crimanalCaseInformations": {
+        "title": "Criminal Case Information",
+        "translationKey": "Criminal Case Information",
+        "attributes": [
+          "CRIMINAL CASE NO.",
+          "Category",
+          "Reefering Court",
+          "Date",
+          "Offence charged"
+        ]
+      },
+      "refferalInformation": {
+        "title": "Referral Information",
+        "translationKey": "Referral Information",
+        "attributes": [
+          "Referred From",
+          "Referred Date",
+          "Referred ID"
         ]
       },
       "hidden": {
@@ -89,7 +125,7 @@
     "hideRelationShipDuration": true,
     "showTribeName": true,
     "showCasteSameAsLastNameCheckbox": false,
-    "patientAttendanceMode": "room",
+    "patientAttendanceMode": "provider",
     "assumedBirthDay": "01/07",
     "printOptions": [
       {
@@ -103,7 +139,7 @@
         "shortcutKey": "c"
       }
     ],
-    "Telephone Contact": {
+    "providerInCharge": {
       "required": true
     },
     "conceptSetUI": {
